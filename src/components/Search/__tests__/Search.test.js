@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from "react-router-dom";
 
-import Detail from '../Detail';
+import Search from '../index';
 
-describe( 'Detail component', () => {
+describe( 'Search component', () => {
 
-  const initialEntries = ['/', '/detail'];
-  const component =  <MemoryRouter initialEntries={initialEntries}><Detail /></MemoryRouter>;
+  const initialEntries = ['/'];
+  const component =  <MemoryRouter initialEntries={initialEntries}><Search /></MemoryRouter>;
 
   it('Renders without crashing', () => {
     const div = document.createElement('div');

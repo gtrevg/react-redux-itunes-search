@@ -1,0 +1,411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component Snapshot matchs 1`] = `
+<div>
+  <div
+    className="SearchBar"
+  >
+    <span
+      className="ant-input-search ant-input-search-enter-button ant-input-search-large ant-input-affix-wrapper ant-input-affix-wrapper-lg"
+      style={undefined}
+    >
+      <input
+        className="ant-input ant-input-lg"
+        disabled={false}
+        onKeyDown={[Function]}
+        placeholder="Search for artists, songs, albums, genre,... Whatever!"
+        size="large"
+        style={null}
+        type="text"
+      />
+      <span
+        className="ant-input-suffix"
+      >
+        <button
+          className="ant-btn ant-input-search-button ant-btn-primary ant-btn-lg"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            Search
+          </span>
+        </button>
+      </span>
+    </span>
+  </div>
+  <div
+    className="SearchTable"
+  >
+    <div
+      className="ant-table-wrapper"
+      style={undefined}
+    >
+      <div
+        className="ant-spin-nested-loading"
+        style={null}
+      >
+        <div
+          className="ant-spin-container"
+        >
+          <div
+            className="ant-table ant-table-large ant-table-scroll-position-left"
+            id={undefined}
+            style={Object {}}
+          >
+            <div
+              className="ant-table-content"
+            >
+              <div
+                className="ant-table-body"
+                onScroll={[Function]}
+                style={Object {}}
+              >
+                <table
+                  className=""
+                  style={Object {}}
+                >
+                  <colgroup>
+                    <col
+                      style={
+                        Object {
+                          "minWidth": undefined,
+                          "width": undefined,
+                        }
+                      }
+                    />
+                    <col
+                      style={
+                        Object {
+                          "minWidth": undefined,
+                          "width": undefined,
+                        }
+                      }
+                    />
+                    <col
+                      style={
+                        Object {
+                          "minWidth": undefined,
+                          "width": undefined,
+                        }
+                      }
+                    />
+                    <col
+                      style={
+                        Object {
+                          "minWidth": undefined,
+                          "width": undefined,
+                        }
+                      }
+                    />
+                    <col
+                      style={
+                        Object {
+                          "minWidth": undefined,
+                          "width": undefined,
+                        }
+                      }
+                    />
+                    <col
+                      style={
+                        Object {
+                          "minWidth": undefined,
+                          "width": undefined,
+                        }
+                      }
+                    />
+                    <col
+                      style={
+                        Object {
+                          "minWidth": undefined,
+                          "width": undefined,
+                        }
+                      }
+                    />
+                    <col
+                      style={
+                        Object {
+                          "minWidth": undefined,
+                          "width": undefined,
+                        }
+                      }
+                    />
+                  </colgroup>
+                  <thead
+                    className="ant-table-thead"
+                  >
+                    <tr
+                      style={
+                        Object {
+                          "height": null,
+                        }
+                      }
+                    >
+                      <th
+                        className=""
+                      >
+                        <span>
+                          Title
+                        </span>
+                      </th>
+                      <th
+                        className=""
+                      >
+                        <span>
+                          Artist
+                        </span>
+                      </th>
+                      <th
+                        className=""
+                      >
+                        <span>
+                          Album title
+                        </span>
+                      </th>
+                      <th
+                        className=""
+                      >
+                        <span>
+                          Release date
+                        </span>
+                      </th>
+                      <th
+                        className=""
+                      >
+                        <span>
+                          Cover
+                        </span>
+                      </th>
+                      <th
+                        className=""
+                      >
+                        <span>
+                          Lenght
+                        </span>
+                      </th>
+                      <th
+                        className=""
+                      >
+                        <span>
+                          Genre
+                        </span>
+                      </th>
+                      <th
+                        className=""
+                      >
+                        <span>
+                          Price
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    className="ant-table-tbody"
+                  >
+                    <tr
+                      className="ant-table-row  ant-table-row-level-0"
+                      onClick={[Function]}
+                      onContextMenu={[Function]}
+                      onDoubleClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      style={
+                        Object {
+                          "height": null,
+                        }
+                      }
+                    >
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        <span
+                          className="ant-table-row-indent indent-level-0"
+                          style={
+                            Object {
+                              "paddingLeft": "0px",
+                            }
+                          }
+                        />
+                        Smooth criminal
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        Michael Jackson
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        Bad
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        21/10/1988
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Smooth criminal"
+                          src="https://upload.wikimedia.org/wikipedia/ru/thumb/1/12/Michael_Jackson_-_Bad.jpg/220px-Michael_Jackson_-_Bad.jpg"
+                          style={
+                            Object {
+                              "width": 60,
+                            }
+                          }
+                        />
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        4:17
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        Funk, dance pop
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        1.07€
+                      </td>
+                    </tr>
+                    <tr
+                      className="ant-table-row  ant-table-row-level-0"
+                      onClick={[Function]}
+                      onContextMenu={[Function]}
+                      onDoubleClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      style={
+                        Object {
+                          "height": null,
+                        }
+                      }
+                    >
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        <span
+                          className="ant-table-row-indent indent-level-0"
+                          style={
+                            Object {
+                              "paddingLeft": "0px",
+                            }
+                          }
+                        />
+                        Billie Jean
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        Michael Jackson
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        Thriller
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        02/01/1983
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Billie Jean"
+                          src="https://statics.loff.it/wp-content/uploads/2011/10/220px-Michaeljacksonthrilleralbum.jpg"
+                          style={
+                            Object {
+                              "width": 60,
+                            }
+                          }
+                        />
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        4:54
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        Post-disco, rhythm and blues, funk, dance-pop
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        0.89€
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <ul
+            className="ant-pagination ant-table-pagination"
+            style={Object {}}
+            unselectable="unselectable"
+          >
+            <li
+              aria-disabled={true}
+              className="ant-pagination-disabled ant-pagination-prev"
+              onClick={[Function]}
+              onKeyPress={[Function]}
+              tabIndex="0"
+              title="Previous Page"
+            >
+              <a
+                className="ant-pagination-item-link"
+              />
+            </li>
+            <li
+              className="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+              onClick={[Function]}
+              onKeyPress={[Function]}
+              tabIndex="0"
+              title={1}
+            >
+              <a>
+                1
+              </a>
+            </li>
+            <li
+              aria-disabled={true}
+              className="ant-pagination-disabled ant-pagination-next"
+              onClick={[Function]}
+              onKeyPress={[Function]}
+              tabIndex="0"
+              title="Next Page"
+            >
+              <a
+                className="ant-pagination-item-link"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
