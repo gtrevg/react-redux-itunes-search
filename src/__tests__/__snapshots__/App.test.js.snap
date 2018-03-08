@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component Snapshot matchs 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <h1
+      className="App-title"
+    >
+      React & Redux iTunes Search Tool
+    </h1>
+  </header>
+  <div
+    className="App-body"
+  >
+    <div>
+      <div>
+        <a
+          href="/detail"
+          onClick={[Function]}
+        >
+          Go to detail
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
