@@ -8,18 +8,19 @@ import { fetchSearch } from '../../actions';
 const Search = Input.Search;
 
 class SearchBar extends PureComponent {
-  render() {
-    const { fetchSearch } = this.props;
-    return (
-      <div className="SearchBar">
-        <Search
-            placeholder="Search for artists, songs, albums, genre,... Whatever!"
-            enterButton="Search"
-            size="large"
-            onSearch={value => fetchSearch(value)} />
-          </div>
-    );
-  }
+	render() {
+		const { fetchSearch } = this.props;
+		return (
+			<div className="SearchBar">
+				<Search
+					placeholder="Search for artists, songs, albums, genre,... Whatever!"
+					enterButton="Search"
+					size="large"
+					onSearch={value => fetchSearch(value)}
+				/>
+			</div>
+		);
+	}
 }
 
 export default connect(null, { fetchSearch })(SearchBar);

@@ -9,23 +9,22 @@ import { Table } from 'antd';
 import SearchTable from '../SearchTable';
 import store from '../../../config/mockStore';
 
-describe( 'SearchTable component', () => {
+describe('SearchTable component', () => {
+	const initialEntries = ['/'];
+	const component = (
+		<Provider store={store}>
+			<SearchTable />
+		</Provider>
+	);
 
-  const initialEntries = ['/'];
-  const component =
-    <Provider store={store}>
-      <SearchTable />
-    </Provider>;
+	it('Renders without crashing', () => {
+		const div = document.createElement('div');
+		ReactDOM.render(component, div);
+		ReactDOM.unmountComponentAtNode(div);
+	});
 
-  it('Renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(component, div);
-    ReactDOM.unmountComponentAtNode(div);
-  });
-
-  it('Snapshot matchs', () => {
-    const tree = renderer.create(component).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
+	it('Snapshot matchs', () => {
+		const tree = renderer.create(component).toJSON();
+		expect(tree).toMatchSnapshot();
+	});
 });

@@ -10,45 +10,44 @@ import { fetchSearch } from '../../../actions';
 import store from '../../../config/mockStore';
 import { SEARCH_FETCH_SEARCH_REQUEST } from '../../../actions';
 
-describe( 'SearchBar component', () => {
+describe('SearchBar component', () => {
+	const initialEntries = ['/'];
+	const component = (
+		<Provider store={store}>
+			<SearchBar />
+		</Provider>
+	);
 
-  const initialEntries = ['/'];
-  const component =
-    <Provider store={store}>
-      <SearchBar />
-    </Provider>;
+	it('Renders without crashing', () => {
+		const div = document.createElement('div');
+		ReactDOM.render(component, div);
+		ReactDOM.unmountComponentAtNode(div);
+	});
 
-  it('Renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(component, div);
-    ReactDOM.unmountComponentAtNode(div);
-  });
+	it('Snapshot matchs', () => {
+		const tree = renderer.create(component).toJSON();
+		expect(tree).toMatchSnapshot();
+	});
 
-  it('Snapshot matchs', () => {
-    const tree = renderer.create(component).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+	it('Check that the search button launchs an action', () => {
+		const tree = TestUtils.renderIntoDocument(component);
+		const search = TestUtils.findRenderedComponentWithType(tree, Input.Search);
+		const { onSearch } = search.props;
 
-  it('Check that the search button launchs an action', () => {
-    const tree = TestUtils.renderIntoDocument(component);
-    const search = TestUtils.findRenderedComponentWithType(tree, Input.Search);
-    const { onSearch } = search.props;
+		//Call the function
+		const term = 'Michael Jackson';
+		onSearch(term);
 
-    //Call the function
-    const term = 'Michael Jackson';
-    onSearch(term);
-
-    const expectedActions = [
-        {
-            type: SEARCH_FETCH_SEARCH_REQUEST,
-            payload: {
-                meta: {
-                    term
-                }
-            }
-        }
-    ];
-    expect(store.getActions()).toEqual(expectedActions);
-  });
-
+		const expectedActions = [
+			{
+				type: SEARCH_FETCH_SEARCH_REQUEST,
+				payload: {
+					meta: {
+						term,
+					},
+				},
+			},
+		];
+		expect(store.getActions()).toEqual(expectedActions);
+	});
 });
