@@ -17,220 +17,44 @@ exports[`App component Snapshot matchs 1`] = `
     className="App-body"
   >
     <div>
-      <div>
-        <div
-          className="SearchBar"
-        >
-          <span
-            className="ant-input-search ant-input-search-enter-button ant-input-search-large ant-input-affix-wrapper ant-input-affix-wrapper-lg"
-            style={undefined}
-          >
-            <input
-              className="ant-input ant-input-lg"
-              disabled={false}
-              onKeyDown={[Function]}
-              placeholder="Search for artists, songs, albums, genre,... Whatever!"
-              size="large"
-              style={null}
-              type="text"
-            />
-            <span
-              className="ant-input-suffix"
-            >
-              <button
-                className="ant-btn ant-input-search-button ant-btn-primary ant-btn-lg"
-                onClick={[Function]}
-                type="button"
-              >
-                <span>
-                  Search
-                </span>
-              </button>
-            </span>
-          </span>
-        </div>
-        <div
-          className="SearchTable"
-        >
-          <div
-            className="ant-table-wrapper"
-            style={undefined}
-          >
-            <div
-              className="ant-spin-nested-loading"
-              style={null}
-            >
-              <div
-                className="ant-spin-container"
-              >
-                <div
-                  className="ant-table ant-table-large ant-table-empty ant-table-scroll-position-left"
-                  id={undefined}
-                  style={Object {}}
-                >
-                  <div
-                    className="ant-table-content"
-                  >
-                    <div
-                      className="ant-table-body"
-                      onScroll={[Function]}
-                      style={Object {}}
-                    >
-                      <table
-                        className=""
-                        style={Object {}}
-                      >
-                        <colgroup>
-                          <col
-                            style={
-                              Object {
-                                "minWidth": undefined,
-                                "width": undefined,
-                              }
-                            }
-                          />
-                          <col
-                            style={
-                              Object {
-                                "minWidth": undefined,
-                                "width": undefined,
-                              }
-                            }
-                          />
-                          <col
-                            style={
-                              Object {
-                                "minWidth": undefined,
-                                "width": undefined,
-                              }
-                            }
-                          />
-                          <col
-                            style={
-                              Object {
-                                "minWidth": undefined,
-                                "width": undefined,
-                              }
-                            }
-                          />
-                          <col
-                            style={
-                              Object {
-                                "minWidth": undefined,
-                                "width": undefined,
-                              }
-                            }
-                          />
-                          <col
-                            style={
-                              Object {
-                                "minWidth": undefined,
-                                "width": undefined,
-                              }
-                            }
-                          />
-                          <col
-                            style={
-                              Object {
-                                "minWidth": undefined,
-                                "width": undefined,
-                              }
-                            }
-                          />
-                          <col
-                            style={
-                              Object {
-                                "minWidth": undefined,
-                                "width": undefined,
-                              }
-                            }
-                          />
-                        </colgroup>
-                        <thead
-                          className="ant-table-thead"
-                        >
-                          <tr
-                            style={
-                              Object {
-                                "height": null,
-                              }
-                            }
-                          >
-                            <th
-                              className=""
-                            >
-                              <span>
-                                Title
-                              </span>
-                            </th>
-                            <th
-                              className=""
-                            >
-                              <span>
-                                Artist
-                              </span>
-                            </th>
-                            <th
-                              className=""
-                            >
-                              <span>
-                                Album title
-                              </span>
-                            </th>
-                            <th
-                              className=""
-                            >
-                              <span>
-                                Release date
-                              </span>
-                            </th>
-                            <th
-                              className=""
-                            >
-                              <span>
-                                Cover
-                              </span>
-                            </th>
-                            <th
-                              className=""
-                            >
-                              <span>
-                                Lenght
-                              </span>
-                            </th>
-                            <th
-                              className=""
-                            >
-                              <span>
-                                Genre
-                              </span>
-                            </th>
-                            <th
-                              className=""
-                            >
-                              <span>
-                                Price
-                              </span>
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody
-                          className="ant-table-tbody"
-                        />
-                      </table>
-                    </div>
-                    <div
-                      className="ant-table-placeholder"
-                    >
-                      No data
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <mocked
+        name="Search"
+        props={
+          Object {
+            "history": Object {
+              "action": "POP",
+              "block": [Function],
+              "createHref": [Function],
+              "go": [Function],
+              "goBack": [Function],
+              "goForward": [Function],
+              "length": 1,
+              "listen": [Function],
+              "location": Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              },
+              "push": [Function],
+              "replace": [Function],
+            },
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "match": Object {
+              "isExact": true,
+              "params": Object {},
+              "path": "/",
+              "url": "/",
+            },
+            "staticContext": undefined,
+          }
+        }
+      />
     </div>
   </div>
 </div>

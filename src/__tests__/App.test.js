@@ -2,8 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from "react-router-dom";
+import { mockComponent } from '../utils/testUtils';
 
 import App from '../App';
+
+jest.mock('../components/Search', () => {
+  return (props) => mockComponent('Search', props);
+});
 
 describe( 'App component', () => {
 

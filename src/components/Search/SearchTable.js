@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { Table } from 'antd';
 
-
 import './SearchTable.css';
 
 const columns = [

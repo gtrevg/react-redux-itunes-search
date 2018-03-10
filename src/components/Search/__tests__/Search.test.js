@@ -1,21 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import { Provider } from 'react-redux';
-import { MemoryRouter } from "react-router-dom";
+import { mockComponent } from '../../../utils/testUtils';
 
 import Search from '../index';
-import store from '../../../config/mockStore';
+
+jest.mock('../SearchBar', () => {
+  return (props) => mockComponent('SearchBar', props);
+});
+
+jest.mock('../SearchTable', () => {
+  return (props) => mockComponent('SearchTable', props);
+});
 
 describe( 'Search component', () => {
 
-  const initialEntries = ['/'];
-  const component =
-    <Provider store={store}>
-      <MemoryRouter initialEntries={initialEntries}>
-        <Search />
-      </MemoryRouter>
-    </Provider>;
+  const component = <Search />;
 
   it('Renders without crashing', () => {
     const div = document.createElement('div');

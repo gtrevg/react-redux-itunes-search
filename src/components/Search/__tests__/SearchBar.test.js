@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 
-import SearchTable from '../SearchTable';
+import SearchBar from '../SearchBar';
 import store from '../../../config/mockStore';
 
-describe( 'SearchTable component', () => {
+describe( 'SearchBar component', () => {
 
   const initialEntries = ['/'];
   const component =
     <Provider store={store}>
-      <SearchTable />
+      <SearchBar />
     </Provider>;
 
   it('Renders without crashing', () => {
