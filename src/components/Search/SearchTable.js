@@ -1,34 +1,50 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Table } from 'antd';
+import moment from 'moment';
 
 import './SearchTable.css';
+
+const getDate = (text) => moment(text).format('DD/MM/YYYY');
+
+const getDuration = (text) => {
+  const minutes = moment.duration(text).minutes() + '';
+  const seconds = moment.duration(text).seconds() + '';
+  return minutes.padStart(2, '0') + ':' + seconds.padStart(2, '0');
+};
 
 const columns = [
   {
     title: 'Title',
     dataIndex: 'title',
-    key: 'title'
+    key: 'title',
+    className: 'SearchTableTitle'
   },
   {
     title: 'Artist',
     dataIndex: 'artist',
-    key: 'artist'
+    key: 'artist',
+    className: 'SearchTableArtist'
   },
   {
     title: 'Album title',
     dataIndex: 'album',
-    key: 'album'
+    key: 'album',
+    className: 'SearchTableAlbum'
   },
   {
     title: 'Release date',
     dataIndex: 'release',
-    key: 'release'
+    key: 'release',
+    className: 'SearchTableRelease',
+    render: getDate
   },
   {
     title: 'Cover',
     dataIndex: 'cover',
     key: 'cover',
+    className: 'SearchTableCover',
     render: (text, record) => (
       <img alt={record.title} src={text} style={{width: 60}}/>
     ),
@@ -36,21 +52,34 @@ const columns = [
   {
     title: 'Lenght',
     dataIndex: 'lenght',
-    key: 'lenght'
+    key: 'lenght',
+    className: 'SearchTableLenght',
+    render: getDuration
   },
   {
     title: 'Genre',
     dataIndex: 'genre',
-    key: 'genre'
+    key: 'genre',
+    className: 'SearchTableGenre'
   },
   {
     title: 'Price',
     dataIndex: 'price',
-    key: 'price'
+    key: 'price',
+    className: 'SearchTablePrice'
   }
 ];
 
 class SearchTable extends PureComponent {
+
+  static contextTypes = {
+    router: PropTypes.object
+  }
+
+  goToDetail(id) {
+    this.context.router.history.push(`/detail?id=${id}`);
+  }
+
   render() {
     const { isLoading, dataSource } = this.props;
     return (
@@ -62,7 +91,7 @@ class SearchTable extends PureComponent {
           pagination={{ pageSize: 5 }}
           onRow={(record) => {
             return {
-              onClick: () => { console.log(record); },       // click row
+              onClick: () => this.goToDetail(record.key)
               };
             }}
         />
@@ -70,6 +99,7 @@ class SearchTable extends PureComponent {
     );
   }
 };
+
 
 const mapStateToProps = (state) => {
   return {

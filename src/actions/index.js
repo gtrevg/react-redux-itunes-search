@@ -8,6 +8,7 @@ export const SEARCH_FETCH_SEARCH_FAILURE = 'SEARCH@FETCH_SEARCH/FAILURE';
 const URL_API_ITUNES = 'https://itunes.apple.com/search'
 
 export const fetchSearch = (term) => {
+  if (!term) return { type: SEARCH_FETCH_SEARCH_FAILURE };
   const url = `${URL_API_ITUNES}?media=music&term=${term.replace(' ', '+')}`;
   const meta = { term };
   return doFetch(SEARCH_FETCH_SEARCH, url, meta);

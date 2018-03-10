@@ -3,3 +3,73 @@
   margin: 10px;
   border-radius: 8px;
 }
+
+.SearchTableTitle {
+    width: 25%;
+    min-width: 160px;
+}
+
+.SearchTableArtist {
+    width: 20%;
+    min-width: 120px;
+}
+
+.SearchTableAlbum {
+    width: 25%;
+    min-width: 160px;
+}
+
+.SearchTableRelease {
+    width: 5%;
+    min-width: 120px;
+}
+
+.SearchTableCover {
+    width: 5%;
+    min-width: 80px;
+}
+
+.SearchTableLenght {
+    width: 5%;
+    min-width: 80px;
+}
+
+.SearchTableGenre {
+    width: 10%;
+    min-width: 120px;
+}
+
+.SearchTablePrice {
+    width: 5%;
+    min-width: 120px;
+}
+
+@media (max-width: 1240px) {
+  .SearchTablePrice {
+    display: none;
+  }
+}
+
+@media (max-width: 1120px) {
+  .SearchTableGenre {
+    display: none;
+  }
+}
+
+@media (max-width: 1040px) {
+  .SearchTableLenght {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .SearchTableCover {
+    display: none;
+  }
+}
+
+@media (max-width: 840px) {
+  .SearchTableRelease {
+    display: none;
+  }
+}

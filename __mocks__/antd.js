@@ -8,7 +8,6 @@ export class Table extends Component {
 }
 
 class Search extends Component {
-
     render() {
         return mockComponent('Antd Search', this.props);
     }

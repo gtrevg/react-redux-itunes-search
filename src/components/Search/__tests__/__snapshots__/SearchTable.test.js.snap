@@ -10,42 +10,52 @@ exports[`SearchTable component Snapshot matchs 1`] = `
       Object {
         "columns": Array [
           Object {
+            "className": "SearchTableTitle",
             "dataIndex": "title",
             "key": "title",
             "title": "Title",
           },
           Object {
+            "className": "SearchTableArtist",
             "dataIndex": "artist",
             "key": "artist",
             "title": "Artist",
           },
           Object {
+            "className": "SearchTableAlbum",
             "dataIndex": "album",
             "key": "album",
             "title": "Album title",
           },
           Object {
+            "className": "SearchTableRelease",
             "dataIndex": "release",
             "key": "release",
+            "render": [Function],
             "title": "Release date",
           },
           Object {
+            "className": "SearchTableCover",
             "dataIndex": "cover",
             "key": "cover",
             "render": [Function],
             "title": "Cover",
           },
           Object {
+            "className": "SearchTableLenght",
             "dataIndex": "lenght",
             "key": "lenght",
+            "render": [Function],
             "title": "Lenght",
           },
           Object {
+            "className": "SearchTableGenre",
             "dataIndex": "genre",
             "key": "genre",
             "title": "Genre",
           },
           Object {
+            "className": "SearchTablePrice",
             "dataIndex": "price",
             "key": "price",
             "title": "Price",

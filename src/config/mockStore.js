@@ -1,6 +1,8 @@
 import configureMockStore from 'redux-mock-store';
-import middlewares from './middlewares';
+import { applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 
+const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
 const dataSourceMock = [
