@@ -6,12 +6,10 @@ import { Input } from 'antd';
 import { Provider } from 'react-redux';
 
 import SearchBar from '../SearchBar';
-import { fetchSearch } from '../../../actions';
 import store from '../../../config/mockStore';
 import { SEARCH_FETCH_SEARCH_REQUEST } from '../../../actions';
 
 describe('SearchBar component', () => {
-	const initialEntries = ['/'];
 	const component = (
 		<Provider store={store}>
 			<SearchBar />

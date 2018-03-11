@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { mockComponent } from '../src/utils/testUtils';
 
 export class Table extends Component {
