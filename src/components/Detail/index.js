@@ -25,14 +25,14 @@ class Detail extends PureComponent {
 	render() {
 		const { detail, search } = this.props;
 		const { isLoading, track } = detail;
-		const { key, title, artist, cover, preview } = track;
+		const { key, title, artist, cover, preview, url } = track;
 		return (
 			<Spin spinning={isLoading} size="large" wrapperClassName="Detail">
 				<DetailBasicInformation title={title} artist={artist} />
 				<DetailCover cover={cover} />
 				<DetailControls preview={preview} />
 				<DetailPrevNext key={key} search={search} />
-				<DetailShare artist={artist} title={title} />
+				<DetailShare artist={artist} title={title} url={url} />
 			</Spin>
 		);
 	}

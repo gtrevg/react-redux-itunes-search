@@ -10,7 +10,14 @@ const defaultState = {
 };
 
 const extractMainData = item => {
-	const { trackId, trackName, artistName, artworkUrl100, previewUrl } = item;
+	const {
+		trackId,
+		trackName,
+		artistName,
+		artworkUrl100,
+		previewUrl,
+		trackViewUrl,
+	} = item;
 
 	return {
 		key: trackId,
@@ -18,6 +25,7 @@ const extractMainData = item => {
 		artist: artistName,
 		cover: artworkUrl100,
 		preview: previewUrl,
+		url: trackViewUrl,
 	};
 };
 

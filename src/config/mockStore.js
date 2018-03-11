@@ -51,6 +51,8 @@ const trackMock = {
 		'http://is2.mzstatic.com/image/thumb/Music127/v4/8a/65/be/8a65bef2-f23d-e43d-9124-f5e4293513f7/source/100x100bb.jpg',
 	preview:
 		'https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview122/v4/c6/50/11/c6501132-e865-3711-175a-ddb79114e42f/mzaf_3806132797788612279.plus.aac.p.m4a',
+	url:
+		'https://itunes.apple.com/us/album/billie-jean/269572838?i=269573364&uo=4',
 };
 
 const store = mockStore({

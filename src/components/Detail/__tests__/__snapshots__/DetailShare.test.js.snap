@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailShare component Snapshot matchs 1`] = `
+<div>
+  <mocked
+    name="React-Share FacebookShareButton"
+    props={
+      Object {
+        "className": "DetailShareButton",
+        "quote": "Listening Billie Jean by Michael Jackson",
+        "url": "https://itunes.apple.com/us/album/billie-jean/269572838?i=269573364&uo=4",
+      }
+    }
+  >
+    <mocked
+      name="React-Share FacebookIcon"
+      props={
+        Object {
+          "round": true,
+          "size": 48,
+        }
+      }
+    />
+  </mocked>
+  <mocked
+    name="React-Share GooglePlusShareButton"
+    props={
+      Object {
+        "className": "DetailShareButton",
+        "url": "https://itunes.apple.com/us/album/billie-jean/269572838?i=269573364&uo=4",
+      }
+    }
+  >
+    <mocked
+      name="React-Share GooglePlusIcon"
+      props={
+        Object {
+          "round": true,
+          "size": 48,
+        }
+      }
+    />
+  </mocked>
+  <mocked
+    name="React-Share TwitterShareButton"
+    props={
+      Object {
+        "className": "DetailShareButton",
+        "title": "Listening Billie Jean by Michael Jackson",
+        "url": "https://itunes.apple.com/us/album/billie-jean/269572838?i=269573364&uo=4",
+      }
+    }
+  >
+    <mocked
+      name="React-Share TwitterIcon"
+      props={
+        Object {
+          "round": true,
+          "size": 48,
+        }
+      }
+    />
+  </mocked>
+</div>
+`;

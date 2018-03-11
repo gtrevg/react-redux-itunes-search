@@ -87,6 +87,7 @@ exports[`Detail component Snapshot matchs 1`] = `
       Object {
         "artist": "Michael Jackson",
         "title": "Billie Jean",
+        "url": "https://itunes.apple.com/us/album/billie-jean/269572838?i=269573364&uo=4",
       }
     }
   />

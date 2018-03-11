@@ -24,6 +24,7 @@ describe('Detail Reducer', () => {
 				artistName: 'artistName 01',
 				artworkUrl100: 'artworkUrl100 01',
 				previewUrl: 'previewUrl 01',
+				trackViewUrl: 'trackViewUrl 01',
 			},
 		];
 
@@ -33,6 +34,7 @@ describe('Detail Reducer', () => {
 			artist: 'artistName 01',
 			cover: 'artworkUrl100 01',
 			preview: 'previewUrl 01',
+			url: 'trackViewUrl 01',
 		};
 
 		const action = {
