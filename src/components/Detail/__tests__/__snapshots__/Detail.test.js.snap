@@ -1,19 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Detail component Snapshot matchs 1`] = `
-<div
-  className="Detail"
+<mocked
+  name="Antd Spin"
+  props={
+    Object {
+      "size": "large",
+      "spinning": false,
+      "wrapperClassName": "Detail",
+    }
+  }
 >
   <mocked
     name="DetailBasicInformation"
     props={
       Object {
-        "artist": Object {
-          "artist": "Michael Jackson",
-        },
-        "title": Object {
-          "title": "Billie Jean",
-        },
+        "artist": "Michael Jackson",
+        "title": "Billie Jean",
       }
     }
   />
@@ -21,9 +24,7 @@ exports[`Detail component Snapshot matchs 1`] = `
     name="DetailCover"
     props={
       Object {
-        "cover": Object {
-          "cover": "http://is2.mzstatic.com/image/thumb/Music127/v4/8a/65/be/8a65bef2-f23d-e43d-9124-f5e4293513f7/source/100x100bb.jpg",
-        },
+        "cover": "http://is2.mzstatic.com/image/thumb/Music127/v4/8a/65/be/8a65bef2-f23d-e43d-9124-f5e4293513f7/source/100x100bb.jpg",
       }
     }
   />
@@ -31,9 +32,7 @@ exports[`Detail component Snapshot matchs 1`] = `
     name="DetailControls"
     props={
       Object {
-        "preview": Object {
-          "preview": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview122/v4/c6/50/11/c6501132-e865-3711-175a-ddb79114e42f/mzaf_3806132797788612279.plus.aac.p.m4a",
-        },
+        "preview": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview122/v4/c6/50/11/c6501132-e865-3711-175a-ddb79114e42f/mzaf_3806132797788612279.plus.aac.p.m4a",
       }
     }
   />
@@ -42,44 +41,42 @@ exports[`Detail component Snapshot matchs 1`] = `
     props={
       Object {
         "search": Object {
-          "search": Object {
-            "dataSource": Array [
-              Object {
-                "album": "Bad",
-                "artist": "Michael Jackson",
-                "cover": "http://is2.mzstatic.com/image/thumb/Music/v4/05/c4/1c/05c41ca0-b614-a91c-e63e-2fd9a59d19e8/source/60x60bb.jpg",
-                "genre": "Pop",
-                "key": 559334764,
-                "lenght": 257766,
-                "price": "1.29 USD",
-                "release": "1987-08-31T07:00:00Z",
-                "title": "Smooth Criminal",
-              },
-              Object {
-                "album": "Thriller",
-                "artist": "Michael Jackson",
-                "cover": "http://is4.mzstatic.com/image/thumb/Music/v4/ec/2b/17/ec2b170d-2ecb-50af-02eb-39f0decc2847/source/60x60bb.jpg",
-                "genre": "Pop",
-                "key": 269573364,
-                "lenght": 294188,
-                "price": "1.29 USD",
-                "release": "1982-11-30T08:00:00Z",
-                "title": "Billie Jean",
-              },
-              Object {
-                "album": "The Essential Michael Jackson",
-                "artist": "Michael Jackson",
-                "cover": "http://is2.mzstatic.com/image/thumb/Music127/v4/8a/65/be/8a65bef2-f23d-e43d-9124-f5e4293513f7/source/60x60bb.jpg",
-                "genre": "Pop",
-                "key": 159294478,
-                "lenght": 320905,
-                "price": "1.29 USD",
-                "release": "1987-08-31T07:00:00Z",
-                "title": "Man In the Mirror",
-              },
-            ],
-            "isLoading": false,
-          },
+          "dataSource": Array [
+            Object {
+              "album": "Bad",
+              "artist": "Michael Jackson",
+              "cover": "http://is2.mzstatic.com/image/thumb/Music/v4/05/c4/1c/05c41ca0-b614-a91c-e63e-2fd9a59d19e8/source/60x60bb.jpg",
+              "genre": "Pop",
+              "key": 559334764,
+              "lenght": 257766,
+              "price": "1.29 USD",
+              "release": "1987-08-31T07:00:00Z",
+              "title": "Smooth Criminal",
+            },
+            Object {
+              "album": "Thriller",
+              "artist": "Michael Jackson",
+              "cover": "http://is4.mzstatic.com/image/thumb/Music/v4/ec/2b/17/ec2b170d-2ecb-50af-02eb-39f0decc2847/source/60x60bb.jpg",
+              "genre": "Pop",
+              "key": 269573364,
+              "lenght": 294188,
+              "price": "1.29 USD",
+              "release": "1982-11-30T08:00:00Z",
+              "title": "Billie Jean",
+            },
+            Object {
+              "album": "The Essential Michael Jackson",
+              "artist": "Michael Jackson",
+              "cover": "http://is2.mzstatic.com/image/thumb/Music127/v4/8a/65/be/8a65bef2-f23d-e43d-9124-f5e4293513f7/source/60x60bb.jpg",
+              "genre": "Pop",
+              "key": 159294478,
+              "lenght": 320905,
+              "price": "1.29 USD",
+              "release": "1987-08-31T07:00:00Z",
+              "title": "Man In the Mirror",
+            },
+          ],
+          "isLoading": false,
         },
       }
     }
@@ -88,14 +85,10 @@ exports[`Detail component Snapshot matchs 1`] = `
     name="DetailShare"
     props={
       Object {
-        "artist": Object {
-          "artist": "Michael Jackson",
-        },
-        "title": Object {
-          "title": "Billie Jean",
-        },
+        "artist": "Michael Jackson",
+        "title": "Billie Jean",
       }
     }
   />
-</div>
+</mocked>
 `;

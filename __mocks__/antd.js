@@ -14,3 +14,15 @@ class Search extends Component {
 }
 
 export const Input = { Search };
+
+export class Spin extends Component {
+	render() {
+		return mockComponent('Antd Spin', this.props);
+	}
+}
+
+export class Card extends Component {
+	render() {
+		return mockComponent('Antd Card', this.props);
+	}
+}

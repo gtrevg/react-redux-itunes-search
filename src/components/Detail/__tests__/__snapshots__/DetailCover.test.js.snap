@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailCover component Snapshot matchs 1`] = `
+<img
+  alt="Cover not found"
+  className="DetailCover"
+  src="http://is2.mzstatic.com/image/thumb/Music127/v4/8a/65/be/8a65bef2-f23d-e43d-9124-f5e4293513f7/source/300x300bb.jpg"
+/>
+`;

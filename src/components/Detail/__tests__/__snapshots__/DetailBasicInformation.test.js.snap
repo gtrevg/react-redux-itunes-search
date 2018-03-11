@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailBasicInformation component Snapshot matchs 1`] = `
+<mocked
+  name="Antd Card"
+  props={
+    Object {
+      "bodyStyle": Object {
+        "paddingBottom": "3px",
+        "paddingTop": "6px",
+      },
+      "className": "DetailBasicInformation",
+      "hoverable": true,
+    }
+  }
+>
+  <h2>
+    Billie Jean
+  </h2>
+  <h3>
+    by 
+    Michael Jackson
+  </h3>
+</mocked>
+`;

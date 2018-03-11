@@ -1,6 +1,9 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
+import { Spin } from 'antd';
 import qs from 'query-string';
+
+import './index.css';
 
 import DetailBasicInformation from './DetailBasicInformation';
 import DetailCover from './DetailCover';
@@ -21,16 +24,16 @@ class Detail extends PureComponent {
 
 	render() {
 		const { detail, search } = this.props;
-		const { track } = detail;
+		const { isLoading, track } = detail;
 		const { key, title, artist, cover, preview } = track;
 		return (
-			<div className="Detail">
-				<DetailBasicInformation artist={{ artist }} title={{ title }} />
-				<DetailCover cover={{ cover }} />
-				<DetailControls preview={{ preview }} />
-				<DetailPrevNext key={{ key }} search={{ search }} />
-				<DetailShare artist={{ artist }} title={{ title }} />
-			</div>
+			<Spin spinning={isLoading} size="large" wrapperClassName="Detail">
+				<DetailBasicInformation title={title} artist={artist} />
+				<DetailCover cover={cover} />
+				<DetailControls preview={preview} />
+				<DetailPrevNext key={key} search={search} />
+				<DetailShare artist={artist} title={title} />
+			</Spin>
 		);
 	}
 }
