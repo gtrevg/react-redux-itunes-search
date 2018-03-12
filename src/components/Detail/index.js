@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { Spin } from 'antd';
 import qs from 'query-string';
 
@@ -24,14 +25,23 @@ class Detail extends PureComponent {
 
 	render() {
 		const { detail, search } = this.props;
+		const { dataSource } = search;
 		const { isLoading, track } = detail;
+
+		// Maybe we haven't load the data
+		if (Object.keys(track).length === 0 && track.constructor === Object)
+			return null;
+
 		const { key, title, artist, cover, preview, url } = track;
 		return (
 			<Spin spinning={isLoading} size="large" wrapperClassName="Detail">
 				<DetailBasicInformation title={title} artist={artist} />
 				<DetailCover cover={cover} />
 				<DetailControls preview={preview} />
-				<DetailPrevNext key={key} search={search} />
+				<DetailPrevNext id={key} dataSource={dataSource} />
+				<Link to="/">
+					<p className="DetailReturnLink">Return to search</p>
+				</Link>
 				<DetailShare artist={artist} title={title} url={url} />
 			</Spin>
 		);

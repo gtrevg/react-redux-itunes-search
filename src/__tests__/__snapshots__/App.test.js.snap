@@ -10,7 +10,7 @@ exports[`App component Snapshot matchs 1`] = `
     <h1
       className="App-title"
     >
-      React & Redux iTunes Search Tool
+      iTunes Search Tool & Music Player
     </h1>
   </header>
   <div

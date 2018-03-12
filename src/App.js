@@ -15,7 +15,7 @@ class App extends Component {
 			<Provider store={store}>
 				<div className="App">
 					<header className="App-header">
-						<h1 className="App-title">React & Redux iTunes Search Tool</h1>
+						<h1 className="App-title">iTunes Search Tool & Music Player</h1>
 					</header>
 					<div className="App-body">
 						<Router>

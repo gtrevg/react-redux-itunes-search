@@ -5,7 +5,7 @@ const DetailControls = props => {
 	if (!preview) return null;
 	return (
 		<div>
-			<audio src={preview} controls autoPlay>
+			<audio src={preview} controls>
 				Sorry, your browser does not support the audio element.
 			</audio>
 		</div>

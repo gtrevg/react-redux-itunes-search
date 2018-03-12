@@ -3,7 +3,6 @@
 exports[`DetailControls component Snapshot matchs 1`] = `
 <div>
   <audio
-    autoPlay={true}
     controls={true}
     src="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview122/v4/c6/50/11/c6501132-e865-3711-175a-ddb79114e42f/mzaf_3806132797788612279.plus.aac.p.m4a"
   >
