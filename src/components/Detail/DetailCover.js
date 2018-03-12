@@ -3,11 +3,13 @@ import React from 'react';
 import './DetailCover.css';
 
 const DetailCover = props => {
-	const { cover } = props;
-	if (!cover) return null;
+	const { bigCover } = props;
+	if (!bigCover) return null;
 	//Trick for improving the size
-	const cover300px = cover.replace('100x100bb', '300x300bb');
-	return <img alt="Cover not found" src={cover300px} className="DetailCover" />;
+	const bigCover300px = bigCover.replace('100x100bb', '300x300bb');
+	return (
+		<img alt="Cover not found" src={bigCover300px} className="DetailCover" />
+	);
 };
 
 export default DetailCover;

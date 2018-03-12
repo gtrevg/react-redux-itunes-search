@@ -6,7 +6,7 @@ import DetailCover from '../DetailCover';
 
 describe('DetailCover component', () => {
 	const component = (
-		<DetailCover cover="http://is2.mzstatic.com/image/thumb/Music127/v4/8a/65/be/8a65bef2-f23d-e43d-9124-f5e4293513f7/source/300x300bb.jpg" />
+		<DetailCover bigCover="http://is2.mzstatic.com/image/thumb/Music127/v4/8a/65/be/8a65bef2-f23d-e43d-9124-f5e4293513f7/source/300x300bb.jpg" />
 	);
 
 	it('Renders without crashing', () => {

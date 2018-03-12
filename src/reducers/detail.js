@@ -2,6 +2,7 @@ import {
 	DETAIL_FETCH_SEARCH_REQUEST,
 	DETAIL_FETCH_SEARCH_SUCCESS,
 	DETAIL_FETCH_SEARCH_FAILURE,
+	DETAIL_CHANGE_TRACK,
 } from '../actions';
 
 const defaultState = {
@@ -23,7 +24,7 @@ const extractMainData = item => {
 		key: trackId,
 		title: trackName,
 		artist: artistName,
-		cover: artworkUrl100,
+		bigCover: artworkUrl100,
 		preview: previewUrl,
 		url: trackViewUrl,
 	};
@@ -48,6 +49,12 @@ export default function(state = defaultState, action) {
 
 		case DETAIL_FETCH_SEARCH_FAILURE:
 			return { ...defaultState };
+
+		case DETAIL_CHANGE_TRACK:
+			return {
+				track: action.payload.track,
+				isLoading: false,
+			};
 
 		default:
 			return state;

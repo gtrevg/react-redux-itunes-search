@@ -32,7 +32,7 @@ describe('Detail Reducer', () => {
 			key: 'trackId 01',
 			title: 'trackName 01',
 			artist: 'artistName 01',
-			cover: 'artworkUrl100 01',
+			bigCover: 'artworkUrl100 01',
 			preview: 'previewUrl 01',
 			url: 'trackViewUrl 01',
 		};

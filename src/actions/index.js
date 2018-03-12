@@ -11,6 +11,7 @@ export const DETAIL_FETCH_SEARCH = 'DETAIL@FETCH_SEARCH';
 export const DETAIL_FETCH_SEARCH_REQUEST = 'DETAIL@FETCH_SEARCH/REQUEST';
 export const DETAIL_FETCH_SEARCH_SUCCESS = 'DETAIL@FETCH_SEARCH/SUCCESS';
 export const DETAIL_FETCH_SEARCH_FAILURE = 'DETAIL@FETCH_SEARCH/FAILURE';
+export const DETAIL_CHANGE_TRACK = 'DETAIL@CHANGE_TRACK';
 
 const URL_API_ITUNES = 'https://itunes.apple.com/search';
 
@@ -26,6 +27,13 @@ export const fetchSearchById = term => {
 	const url = `${URL_API_ITUNES}?term=${term}`;
 	const meta = { term };
 	return doFetch(DETAIL_FETCH_SEARCH, url, meta);
+};
+
+export const changeTrack = track => {
+	return {
+		type: DETAIL_CHANGE_TRACK,
+		payload: { track },
+	};
 };
 
 /*

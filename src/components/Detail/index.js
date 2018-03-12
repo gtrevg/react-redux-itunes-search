@@ -12,7 +12,7 @@ import DetailControls from './DetailControls';
 import DetailPrevNext from './DetailPrevNext';
 import DetailShare from './DetailShare';
 
-import { fetchSearchById } from '../../actions';
+import { fetchSearchById, changeTrack } from '../../actions';
 
 class Detail extends PureComponent {
 	componentDidMount() {
@@ -24,21 +24,20 @@ class Detail extends PureComponent {
 	}
 
 	render() {
-		const { detail, search } = this.props;
-		const { dataSource } = search;
+		const { detail, changeTrack } = this.props;
 		const { isLoading, track } = detail;
 
 		// Maybe we haven't load the data
 		if (Object.keys(track).length === 0 && track.constructor === Object)
 			return null;
 
-		const { key, title, artist, cover, preview, url } = track;
+		const { key, title, artist, bigCover, preview, url } = track;
 		return (
 			<Spin spinning={isLoading} size="large" wrapperClassName="Detail">
 				<DetailBasicInformation title={title} artist={artist} />
-				<DetailCover cover={cover} />
+				<DetailCover bigCover={bigCover} />
 				<DetailControls preview={preview} />
-				<DetailPrevNext id={key} dataSource={dataSource} />
+				<DetailPrevNext id={key} changeTrack={changeTrack} />
 				<Link to="/">
 					<p className="DetailReturnLink">Return to search</p>
 				</Link>
@@ -49,8 +48,10 @@ class Detail extends PureComponent {
 }
 
 const mapStateToProps = state => {
-	const { detail, search } = state;
-	return { detail, search };
+	const { detail } = state;
+	return { detail };
 };
 
-export default connect(mapStateToProps, { fetchSearchById })(Detail);
+export default connect(mapStateToProps, { fetchSearchById, changeTrack })(
+	Detail
+);

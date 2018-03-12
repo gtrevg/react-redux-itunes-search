@@ -61,8 +61,8 @@ const columns = [
 	},
 	{
 		title: 'Cover',
-		dataIndex: 'cover',
-		key: 'cover',
+		dataIndex: 'bigCover',
+		key: 'bigCover',
 		className: 'SearchTableCover',
 		render: (text, record) => (
 			<img alt={record.title} src={text} style={{ width: 60 }} />
@@ -98,8 +98,12 @@ class SearchTable extends PureComponent {
 		router: PropTypes.object,
 	};
 
-	goToDetail(id) {
-		this.context.router.history.push(`/detail?id=${id}`);
+	goToDetail(id, dataSource) {
+		this.context.router.history.push({
+			pathname: '/detail',
+			search: `?id=${id}`,
+			state: { dataSource },
+		});
 	}
 
 	render() {
@@ -113,7 +117,7 @@ class SearchTable extends PureComponent {
 					pagination={{ pageSize: 5 }}
 					onRow={record => {
 						return {
-							onClick: () => this.goToDetail(record.key),
+							onClick: () => this.goToDetail(record.key, dataSource),
 						};
 					}}
 				/>

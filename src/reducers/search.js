@@ -21,6 +21,9 @@ const extractMainData = item => {
 		primaryGenreName,
 		trackPrice,
 		currency,
+		previewUrl,
+		trackViewUrl,
+		artworkUrl100,
 	} = item;
 
 	return {
@@ -33,6 +36,9 @@ const extractMainData = item => {
 		lenght: trackTimeMillis,
 		genre: primaryGenreName,
 		price: trackPrice < 0 ? '-' : `${trackPrice} ${currency}`,
+		preview: previewUrl,
+		url: trackViewUrl,
+		bigCover: artworkUrl100,
 	};
 };
 

@@ -40,8 +40,8 @@ exports[`SearchTable component Snapshot matchs 1`] = `
           },
           Object {
             "className": "SearchTableCover",
-            "dataIndex": "cover",
-            "key": "cover",
+            "dataIndex": "bigCover",
+            "key": "bigCover",
             "render": [Function],
             "title": "Cover",
           },
