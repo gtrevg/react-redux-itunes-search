@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailPrevNext component Snapshot matchs 1`] = `
+<mocked
+  name="ButtonGroup"
+  props={
+    Object {
+      "size": "large",
+    }
+  }
+>
+  <mocked
+    name="Tooltip"
+    props={
+      Object {
+        "placement": "bottomRight",
+        "title": "Smooth Criminal by Michael Jackson",
+      }
+    }
+  >
+    <mocked
+      name="Button"
+      props={
+        Object {
+          "ghost": false,
+          "onClick": [Function],
+          "style": Object {
+            "margin": "10px",
+            "width": "120px",
+          },
+          "type": "primary",
+        }
+      }
+    >
+      <mocked
+        name="Icon"
+        props={
+          Object {
+            "type": "left",
+          }
+        }
+      />
+      Next
+    </mocked>
+  </mocked>
+  <mocked
+    name="Tooltip"
+    props={
+      Object {
+        "placement": "bottomLeft",
+        "title": "Man In the Mirror by Michael Jackson",
+      }
+    }
+  >
+    <mocked
+      name="Button"
+      props={
+        Object {
+          "ghost": false,
+          "onClick": [Function],
+          "style": Object {
+            "margin": "10px",
+            "width": "120px",
+          },
+          "type": "primary",
+        }
+      }
+    >
+      Previous
+      <mocked
+        name="Icon"
+        props={
+          Object {
+            "type": "right",
+          }
+        }
+      />
+    </mocked>
+  </mocked>
+</mocked>
+`;

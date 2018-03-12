@@ -2,6 +2,7 @@ import {
 	DETAIL_FETCH_SEARCH_REQUEST,
 	DETAIL_FETCH_SEARCH_SUCCESS,
 	DETAIL_FETCH_SEARCH_FAILURE,
+	DETAIL_CHANGE_TRACK,
 } from '../../actions';
 import reducer from '../detail';
 
@@ -84,6 +85,31 @@ describe('Detail Reducer', () => {
 		const expectedState = {
 			isLoading: false,
 			track: {},
+		};
+		expect(reducer(initialState, action)).toEqual(expectedState);
+	});
+
+	it('Action: DETAIL_CHANGE_TRACK', () => {
+		const track = {
+			trackId: 'trackId 01',
+			trackName: 'trackName 01',
+			artistName: 'artistName 01',
+			artworkUrl100: 'artworkUrl100 01',
+			previewUrl: 'previewUrl 01',
+			trackViewUrl: 'trackViewUrl 01',
+		};
+
+		const action = {
+			type: DETAIL_CHANGE_TRACK,
+			payload: { track },
+		};
+		const initialState = {
+			isLoading: true,
+			track: { propA: 'a', propB: 'b' },
+		};
+		const expectedState = {
+			isLoading: false,
+			track: track,
 		};
 		expect(reducer(initialState, action)).toEqual(expectedState);
 	});

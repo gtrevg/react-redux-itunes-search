@@ -3,8 +3,9 @@ import {
 	SEARCH_FETCH_SEARCH_SUCCESS,
 	DETAIL_FETCH_SEARCH_REQUEST,
 	DETAIL_FETCH_SEARCH_SUCCESS,
+	DETAIL_CHANGE_TRACK,
 } from '../index';
-import { doFetch, fetchSearch, fetchSearchById } from '../index';
+import { doFetch, fetchSearch, fetchSearchById, changeTrack } from '../index';
 
 describe('Action creators: ', () => {
 	it('fetchSearch', async () => {
@@ -56,6 +57,16 @@ it('fetchSearchById', async () => {
 	// verify
 	expect(dispatch.mock.calls[0][0]).toEqual(expected[0]);
 	expect(dispatch.mock.calls[1][0]).toEqual(expected[1]);
+});
+
+it('changeTrack', () => {
+	const track = { propA: 1, propB: 2 };
+	const result = changeTrack(track);
+	const expected = {
+		type: DETAIL_CHANGE_TRACK,
+		payload: { track },
+	};
+	expect(result).toEqual(expected);
 });
 
 describe('Auxiliar functions of actions creators: ', () => {

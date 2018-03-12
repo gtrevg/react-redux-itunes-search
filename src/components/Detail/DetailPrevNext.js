@@ -2,24 +2,24 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Tooltip, Button, Icon } from 'antd';
 
-const lookUpIdIndex = (id, dataSource) => {
-	return dataSource.findIndex(item => item.key === id);
-};
-
-const getPreviousItem = (idIndex, dataSource) => {
-	if (idIndex === 0) return null;
-	return dataSource[idIndex - 1];
-};
-
-const getNextItem = (idIndex, dataSource) => {
-	if (idIndex === dataSource.lenght - 1) return null;
-	return dataSource[idIndex + 1];
-};
-
 class DetailPrevNext extends PureComponent {
 	static contextTypes = {
 		router: PropTypes.object,
 	};
+
+	lookUpIdIndex(id, dataSource) {
+		return dataSource.findIndex(item => item.key === id);
+	}
+
+	getPreviousItem(idIndex, dataSource) {
+		if (idIndex === 0) return null;
+		return dataSource[idIndex - 1];
+	}
+
+	getNextItem(idIndex, dataSource) {
+		if (idIndex === dataSource.lenght - 1) return null;
+		return dataSource[idIndex + 1];
+	}
 
 	getDataSource() {
 		if (!this.context.router.history.location) return [];
@@ -48,10 +48,10 @@ class DetailPrevNext extends PureComponent {
 		const { id } = this.props;
 		const dataSource = this.getDataSource();
 
-		const idIndex = lookUpIdIndex(id, dataSource);
+		const idIndex = this.lookUpIdIndex(id, dataSource);
 		if (idIndex >= 0) {
-			const previousItem = getPreviousItem(idIndex, dataSource);
-			const nextItem = getNextItem(idIndex, dataSource);
+			const previousItem = this.getPreviousItem(idIndex, dataSource);
+			const nextItem = this.getNextItem(idIndex, dataSource);
 			return (
 				<Button.Group size="large">
 					<Tooltip placement="bottomRight" title={this.getTitle(previousItem)}>
