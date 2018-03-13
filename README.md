@@ -15,11 +15,7 @@ It is a good example of how using these tecnologies:
 * [React](https://facebook.github.io/react/)
 * [Create-React-App](https://github.com/facebookincubator/create-react-app)
 * [React-Router v4.0.0](https://github.com/ReactTraining/react-router)
-* React middlewares like:
-* [redux-thunk](https://github.com/gaearon/redux-thunk)
-* [redux-logger](https://github.com/evgenyrodionov/redux-logger)
-* [redux-freeze](https://github.com/buunguyen/redux-freeze)
-* [redux-mock-store](https://github.com/arnaudbenard/redux-mock-store)
+* React middlewares like: [redux-thunk](https://github.com/gaearon/redux-thunk), [redux-logger](https://github.com/evgenyrodionov/redux-logger), [redux-freeze](https://github.com/buunguyen/redux-freeze) and [redux-mock-store](https://github.com/arnaudbenard/redux-mock-store)
 * [Antd Design](https://ant.design/)
 * [Jest](https://facebook.github.io/jest/): Obviously with snapshots
 
@@ -82,7 +78,7 @@ Creating an optimized production build...
 
 You may serve it with a static server:
 
-  yarn global add serve
+  npm run serve -s build
   serve -s build
 ```
 
@@ -118,17 +114,13 @@ This project uses.
 * [React](https://facebook.github.io/react/)
 * [Create-React-App](https://github.com/facebookincubator/create-react-app)
 * [React-Router v4.0.0](https://github.com/ReactTraining/react-router)
-* React middlewares like:
-* [redux-thunk](https://github.com/gaearon/redux-thunk)
-* [redux-logger](https://github.com/evgenyrodionov/redux-logger)
-* [redux-freeze](https://github.com/buunguyen/redux-freeze)
-* [redux-mock-store](https://github.com/arnaudbenard/redux-mock-store)
+* React middlewares like: [redux-thunk](https://github.com/gaearon/redux-thunk), [redux-logger](https://github.com/evgenyrodionov/redux-logger), [redux-freeze](https://github.com/buunguyen/redux-freeze) and [redux-mock-store](https://github.com/arnaudbenard/redux-mock-store)
 * [Antd Design](https://ant.design/)
 * [Jest](https://facebook.github.io/jest/)
 
 ## Authors
 
-* **Aaron Planell** ([LinkedIn](https://www.linkedin.com/in/aaronplanell/))
+* **Aaron Planell** ( [LinkedIn](https://www.linkedin.com/in/aaronplanell/) )
 
 ## License
 
