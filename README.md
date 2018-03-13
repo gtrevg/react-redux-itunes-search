@@ -8,6 +8,8 @@ Each result will navigate to a second page in which, with a similar design to a 
 
 It is a responsive application and uses `@media queries` with a `max-width` of `468px`.
 
+You can see the **demo here: http://react-redux-itunes-search.s3-website.eu-west-3.amazonaws.com/**
+
 ## Who is this project for?
 
 It is a good example of how using these tecnologies:
