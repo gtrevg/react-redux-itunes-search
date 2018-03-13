@@ -13,7 +13,7 @@ class SearchBar extends PureComponent {
 		return (
 			<div className="SearchBar">
 				<Search
-					placeholder="Search for artists, songs, albums, genre,... Whatever!"
+					placeholder="Search for artists, songs, albums, genre..."
 					enterButton="Search"
 					size="large"
 					onSearch={value => fetchSearch(value)}

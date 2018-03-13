@@ -10,7 +10,7 @@ exports[`SearchBar component Snapshot matchs 1`] = `
       Object {
         "enterButton": "Search",
         "onSearch": [Function],
-        "placeholder": "Search for artists, songs, albums, genre,... Whatever!",
+        "placeholder": "Search for artists, songs, albums, genre...",
         "size": "large",
       }
     }
